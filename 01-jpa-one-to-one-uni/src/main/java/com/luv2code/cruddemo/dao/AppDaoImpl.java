@@ -4,7 +4,9 @@ import com.luv2code.cruddemo.entity.Instructor;
 import jakarta.persistence.EntityManager;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class AppDaoImpl implements AppDao{
 
     // define field for entity manager
@@ -19,6 +21,7 @@ public class AppDaoImpl implements AppDao{
     @Override
     @Transactional
     public void save(Instructor theInstructor) {
-        entityManager.persist(theInstructor);
+        entityManager.persist(theInstructor
+        );
     }
 }
