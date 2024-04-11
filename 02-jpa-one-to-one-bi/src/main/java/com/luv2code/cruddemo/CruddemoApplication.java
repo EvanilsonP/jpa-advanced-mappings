@@ -19,7 +19,14 @@ public class CruddemoApplication {
 			createInstructor(appDAO);
 			findInstructor(appDAO);
 			removeInstructor(appDAO);
+			findInstructorDetail(appDAO);
 		};
+	}
+
+	private void findInstructorDetail(AppDao appDAO) {
+		int theId = 2;
+		instructorDetail tempInstructorDetail = appDAO.findInstructorDetailById(theId);
+		
 	}
 
 	private void removeInstructor(AppDao appDAO) {
