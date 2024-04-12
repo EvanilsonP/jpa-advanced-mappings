@@ -23,7 +23,13 @@ public class CruddemoApplication {
 			findInstructorDetail(appDAO);
 			deleteInstructorDetail(appDAO);
 			createInstructorWithCourses(appDAO);
+			findInstructorWithCourses(appDAO);
 		};
+	}
+
+	private void findInstructorWithCourses(AppDao appDAO) {
+		int theId = 1;
+		Instructor tempInstructor = appDAO.findInstructorById(theId);
 	}
 
 	private void createInstructorWithCourses(AppDao appDAO) {
