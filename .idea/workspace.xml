@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0e47e75-7c1d-4558-b1d3-2f6a73af2409" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-jpa-one-to-one-uni/src/main/java/com/luv2code/cruddemo/CruddemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/01-jpa-one-to-one-uni/src/main/java/com/luv2code/cruddemo/CruddemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-jpa-one-to-one-uni/src/main/java/com/luv2code/cruddemo/dao/AppDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/01-jpa-one-to-one-uni/src/main/java/com/luv2code/cruddemo/dao/AppDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-jpa-one-to-one-uni/src/main/java/com/luv2code/cruddemo/dao/AppDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/01-jpa-one-to-one-uni/src/main/java/com/luv2code/cruddemo/dao/AppDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/01-jpa-one-to-one-uni/src/main/java/com/luv2code/cruddemo/entity/InstructorDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/01-jpa-one-to-one-uni/src/main/java/com/luv2code/cruddemo/entity/InstructorDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-jpa-one-to-one-bi/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-jpa-one-to-one-bi/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-jpa-one-to-one-bi/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-jpa-one-to-one-bi/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-jpa-one-to-one-bi/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-jpa-one-to-one-bi/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-jpa-one-to-one-bi/src/main/java/com/luv2code/cruddemo/CruddemoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-jpa-one-to-one-bi/src/main/java/com/luv2code/cruddemo/dao/AppDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-jpa-one-to-one-bi/src/main/java/com/luv2code/cruddemo/dao/AppDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-jpa-one-to-one-bi/src/main/java/com/luv2code/cruddemo/entity/Instructor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-jpa-one-to-one-bi/src/main/java/com/luv2code/cruddemo/entity/InstructorDetail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-jpa-one-to-one-bi/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-jpa-one-to-one-bi/src/test/java/com/luv2code/cruddemo/CruddemoApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
