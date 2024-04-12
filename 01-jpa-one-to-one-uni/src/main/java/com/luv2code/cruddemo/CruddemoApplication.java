@@ -21,7 +21,17 @@ public class CruddemoApplication {
 			removeInstructor(appDAO);
 			findInstructorDetail(appDAO);
 			deleteInstructorDetail(appDAO);
+			createInstructorWithCourses(appDAO);
 		};
+	}
+
+	private void createInstructorWithCourses(AppDao appDAO) {
+		// create the instructor
+		Instructor tempInstructor = new Instructor("Susan", "Public", "luv2code@gmail.com");
+		// create the instructor detail
+		InstructorDetail tempInstructorDetail = new InstructorDetail("www.susan.com/youtube", "learn how to swim");
+		// associate the objects
+		tempInstructor.setInstructorDetail(tempInstructorDetail);
 	}
 
 	private void deleteInstructorDetail(AppDao appDAO) {
