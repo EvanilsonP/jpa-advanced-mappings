@@ -4,6 +4,9 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Getter
 @Setter
 
@@ -29,6 +32,9 @@ public class Instructor {
     @JoinColumn(name = "instructor_details_id")
     private InstructorDetail instructorDetail;
 
+    @OneToMany(mappedBy = "instructor", cascade = { CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+    private List<Course> courses;
+
     public Instructor() {}
 
     public Instructor(String firstName, String lastName, String email) {
@@ -47,4 +53,14 @@ public class Instructor {
                 ", instructorDetail=" + instructorDetail +
                 '}';
     }
+
+    // add convenience methods for bidirectional relationship
+    public void add(Course tempCourse) {
+        if(courses == null) {
+            courses = new ArrayList<>();
+        }
+        courses.add(tempCourse);
+        tempCourse.setInstructor(this);
+    }
+
 }
