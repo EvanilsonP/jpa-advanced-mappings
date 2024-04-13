@@ -4,6 +4,7 @@ import com.luv2code.cruddemo.dao.AppDao;
 import com.luv2code.cruddemo.entity.Course;
 import com.luv2code.cruddemo.entity.Instructor;
 import com.luv2code.cruddemo.entity.InstructorDetail;
+import com.luv2code.cruddemo.entity.Review;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -32,7 +33,14 @@ public class CruddemoApplication {
 			updateCourse(appDAO);
 			deleteInstructor(appDAO);
 			deleteCourse(appDAO);
+			createCourseReviews(appDAO);
 		};
+	}
+
+	private void createCourseReviews(AppDao appDAO) {
+		Course tempCourse = new Course("Pacman - How to score one million points");
+		tempCourse.add(new Review("Great course!!!"));
+		appDAO.save(tempCourse);
 	}
 
 	private void deleteCourse(AppDao appDAO) {
