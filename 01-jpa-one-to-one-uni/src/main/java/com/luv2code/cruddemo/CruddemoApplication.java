@@ -36,7 +36,16 @@ public class CruddemoApplication {
 			creaeCourseAndStudents(appDAO);
 			findCoursesAndStudents(appDAO);
 			findStudentAndCourses(appDAO);
+			addMoreCoursesForStudent(appDAO);
 		};
+	}
+
+	private void addMoreCoursesForStudent(AppDao appDAO) {
+		int theId = 2;
+		Student tempStudent = appDAO.findStudentAndCourseByStudentId(theId);
+		Course tempCourse = new Course("Pacman - How to score");
+		tempStudent.addCourse(tempCourse);
+		appDAO.update(tempStudent);
 	}
 
 	private void findStudentAndCourses(AppDao appDAO) {
