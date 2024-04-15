@@ -35,13 +35,19 @@ public class CruddemoApplication {
             deleteCoursesAndReviews(appDAO);
 			creaeCourseAndStudents(appDAO);
 			findCoursesAndStudents(appDAO);
+			findStudentAndCourses(appDAO);
 		};
+	}
+
+	private void findStudentAndCourses(AppDao appDAO) {
+		int theId = 2;
+		Student tempStudent = appDAO.findStudentAndCourseByStudentId(theId);
 	}
 
 	private void findCoursesAndStudents(AppDao appDAO) {
 		int theId = 10;
 		Course tempCourse = appDAO.findCourseStudentByCourseId(theId);
-		
+
 	}
 
 	private void creaeCourseAndStudents(AppDao appDAO) {
