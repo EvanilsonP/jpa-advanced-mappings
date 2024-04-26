@@ -37,6 +37,7 @@ public class CruddemoApplication {
 			findCoursesAndStudents(appDAO);
 			findStudentAndCourses(appDAO);
 			addMoreCoursesForStudent(appDAO);
+			deleteCourse(appDAO);
 		};
 	}
 
